@@ -111,6 +111,14 @@ class Lint extends Command
 
         return $this->display($details, $format);
     }
+    
+    /**
+     * {@inheritdoc}
+     */
+    public function handle()
+    {
+        return $this->fire();
+    }
 
     /**
      * Gets an array of files to lint.
